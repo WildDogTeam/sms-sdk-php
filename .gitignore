@@ -1,0 +1,9 @@
+.idea/
+*.iws
+.idea_modules/
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+wilddog/tests
+wilddog/docdemo.php
