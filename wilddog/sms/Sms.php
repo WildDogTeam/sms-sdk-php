@@ -110,7 +110,7 @@ class Sms
 
         $response = $client->request(
             'POST',
-            'https://api.wilddog.com/sms/v1/' . $settings->getAppId() . '/code/send',
+            'https://sms.wilddog.com/api/v1/' . $settings->getAppId() . '/code/send',
             $params
         );
 
@@ -147,7 +147,7 @@ class Sms
 
         $response = $client->request(
             'POST',
-            'https://api.wilddog.com/sms/v1/' . $this->settings->getAppId() . '/code/check',
+            'https://sms.wilddog.com/api/v1/' . $this->settings->getAppId() . '/code/check',
             $params
         );
 
@@ -193,7 +193,7 @@ class Sms
 
         $response = $client->request(
             'POST',
-            'https://api.wilddog.com/sms/v1/' . $this->settings->getAppId() . '/notify/send',
+            'https://sms.wilddog.com/api/v1/' . $this->settings->getAppId() . '/notify/send',
             $params
         );
 
@@ -232,7 +232,7 @@ class Sms
 
         $response = $client->request(
             'POST',
-            'https://api.wilddog.com/sms/v1/' . $this->settings->getAppId() . '/marketing/send',
+            'https://sms.wilddog.com/api/v1/' . $this->settings->getAppId() . '/marketing/send',
             $params
         );
 
@@ -253,7 +253,7 @@ class Sms
 
         $response = $client->request(
             'GET',
-            'https://api.wilddog.com/sms/v1/' . $this->settings->getAppId() . '/status',
+            'https://sms.wilddog.com/api/v1/' . $this->settings->getAppId() . '/status',
             $params
         );
 
@@ -274,7 +274,7 @@ class Sms
 
         $response = $client->request(
             'GET',
-            'https://api.wilddog.com/sms/v1/' . $this->settings->getAppId() . '/getBalance',
+            'https://sms.wilddog.com/api/v1/' . $this->settings->getAppId() . '/getBalance',
             $params
         );
 
