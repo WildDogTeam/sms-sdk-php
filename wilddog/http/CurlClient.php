@@ -80,7 +80,7 @@ class CurlClient implements Client
                 CURLOPT_HEADER => true,
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_INFILESIZE => -1,
-                CURLOPT_HTTPHEADER => array('User-Agent: wilddog-sms-php/1.0.1'),
+                CURLOPT_HTTPHEADER => array('User-Agent: wilddog-sms-php/1.0.2'),
                 CURLOPT_TIMEOUT => $timeout,
                 CURLOPT_SSL_VERIFYPEER => false
             );

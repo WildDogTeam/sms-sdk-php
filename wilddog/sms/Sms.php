@@ -136,7 +136,8 @@ class Sms
 
         $params = array(
             'code' => $code,
-            'mobile' => $mobile
+            'mobile' => $mobile,
+            'timestamp' => round(microtime(true) * 1000)
         );
 
         $signature = hash('sha256', urldecode(http_build_query($params) . '&' . $this->settings->getSecret()), false);
