@@ -15,7 +15,6 @@
             "homepage": "https://docs.wilddog.com/sms/index.html"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">5.3.0"
     },
