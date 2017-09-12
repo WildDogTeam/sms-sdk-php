@@ -6,7 +6,7 @@
 
 ### 安装
 ```
-composer require WildDogTeam/sms-sdk-php
+composer require wilddog/sms
 ```
 
 ### 初始化
