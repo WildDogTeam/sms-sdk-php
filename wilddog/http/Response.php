@@ -46,11 +46,17 @@ class Response
         return $this->statusCode;
     }
 
+    /**
+     * @return array
+     */
     public function getHeaders()
     {
         return $this->headers;
     }
 
+    /**
+     * @return bool
+     */
     public function ok()
     {
         return $this->getStatusCode() < 400;

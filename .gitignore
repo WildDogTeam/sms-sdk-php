@@ -7,3 +7,7 @@
 ._*
 wilddog/tests
 wilddog/docdemo.php
+
+/vendor/
+test/
+.phpcomplete_extended/

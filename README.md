@@ -4,13 +4,14 @@
 
 [Wilddog SMS](https://docs.wilddog.com/sms/index.html) SDK for PHP
 
+### 安装
+```
+composer require WildDogTeam/sms-sdk-php
+```
+
 ### 初始化
 
 ```php
-require_once 'PATH/TO/sms/Sms.php';
-require_once 'PATH/TO/sms/Settings.php';
-require_once 'PATH/TO/http/CurlClient.php';
-require_once 'PATH/TO/http/Response.php';
 use wilddog\sms\Sms;
 use wilddog\sms\Settings;
 use wilddog\http\CurlClient;
@@ -69,5 +70,3 @@ echo $response->__toString();
 $response = $sms->getBalance();
 echo $response->__toString();
 ```
-## Contributors
-[zishang520](https://github.com/zishang520)

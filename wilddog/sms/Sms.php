@@ -8,11 +8,6 @@
 
 namespace wilddog\sms;
 
-require_once '../http/CurlClient.php';
-require_once '../exceptions/WilddogException.php';
-require_once 'Settings.php';
-
-use wilddog\sms\Settings;
 use wilddog\http\CurlClient;
 use wilddog\exceptions\WilddogException;
 
@@ -201,6 +196,14 @@ class Sms
         return $response;
     }
 
+    /**
+     * @param array $mobiles
+     * @param $content
+     * @param string $extno
+     * @param $rrid
+     * @return \wilddog\http\Response
+     * @throws WilddogException
+     */
     public function sendMarketing($mobiles = array(), $content, $extno = "0", $rrid) {
         if(count($mobiles) == 0) {
             throw new WilddogException('Empty mobiles array');
@@ -240,6 +243,10 @@ class Sms
         return $response;
     }
 
+    /**
+     * @param $sendId
+     * @return \wilddog\http\Response
+     */
     public function checkStatus($sendId)
     {
         $params = array(
@@ -261,6 +268,9 @@ class Sms
         return $response;
     }
 
+    /**
+     * @return \wilddog\http\Response
+     */
     public function getBalance()
     {
         $params = array(
@@ -282,9 +292,12 @@ class Sms
         return $response;
     }
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
-        return 'Sms';
+        return 'Wilddog.Sms';
     }
 
 }
