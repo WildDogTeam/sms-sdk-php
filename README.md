@@ -12,10 +12,10 @@ composer require wilddog/sms
 ### 初始化
 
 ```php
-use wilddog\sms\Sms;
+require_once PATH_TO_YOUR_PROJECT_ROOT_DIR . '/vendor/autoload.php';
+
 use wilddog\sms\Settings;
-use wilddog\http\CurlClient;
-use wilddog\http\Response;
+use wilddog\sms\Sms;
 
 $settings = new Settings('<YOUR_APP_ID>', '<YOUR_SMS_KEY>');
 $sms = new Sms($settings);
